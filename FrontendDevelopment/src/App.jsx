@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom"
 import Routers from "./routes/routers"
+import Navbar from "./componants/Navbar"
 function App() {
 
   return (
     <div>
-    <Link to="/about">hamza</Link>
-    <Routers />
+    <Navbar />
     </div>
 
   )

@@ -8,10 +8,11 @@ export default {
     extend: {
       colors:{
       primary:"#601800",
+      scondary:"#807D7E",
       F:"#FFF",
       },
       fontFamily:{
-        Sue: ['Sue Ellen Francisco', "cursive"],
+        Sue: ['Sue Ellen Francisco', 'cursive'],
         Poppins: ['Poppins', 'sans-serif'],
       }
     },
