@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+      primary:"#601800",
+      F:"#FFF",
+      },
+      fontFamily:{
+        Sue: ['Sue Ellen Francisco', "cursive"],
+        Poppins: ['Poppins', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
