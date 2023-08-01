@@ -1,4 +1,3 @@
-import Routers from "./routes/routers"
 import Navbar from "./componants/Navbar"
 function App() {
 
