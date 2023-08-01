@@ -4,6 +4,8 @@ import bag from "./shopping-bag.png"
 import search from "./search.png"
 import menu from "./menu.png"
 import close from "./close.png"
+import loginbg from "./loginbg.jpg"
+
 
 const assets =  {
     logo , 
@@ -11,7 +13,8 @@ const assets =  {
     bag,
     search,
     menu,
-    close
+    close,
+    loginbg
 
 }
 export default assets;
