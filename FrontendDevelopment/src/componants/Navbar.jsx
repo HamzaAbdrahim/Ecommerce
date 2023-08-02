@@ -4,10 +4,16 @@ import styles from "../style"
 import Searchbar from "./Searchbar"
 import {navlinks} from "../content/index"
 import Mobilemenu from "./Mobilemenu"
+import Usercard from "./Usercard"
 import {Link } from "react-router-dom"
 const Navbar = () => {
   const [search , setsearch] = useState(false)
   const [open , setopen] = useState(false)
+  const [usercard , setusercard] = useState(false)
+
+  function handelusercard() {
+    setusercard(prev => (!prev))
+  }
 
 
   function showsearch() {
@@ -39,7 +45,10 @@ const Navbar = () => {
         </ul>
         <div className={`hidden xl:flex items-center gap-10 `}>
           <img src={assets.search} alt="search" onClick={showsearch} className="h-8 cursor-pointer" />
-          <img src={assets.user} alt="user" className="h-8 cursor-pointer" />
+          <div>
+          <img src={assets.user} alt="user" onClick={handelusercard} className="h-8 cursor-pointer" />
+          <Usercard user= {assets.user} show = {usercard}/>
+          </div>
           <img src={assets.bag} alt="cart" className="h-10 cursor-pointer" />
           {search && <Searchbar />}
         </div>

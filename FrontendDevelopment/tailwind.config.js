@@ -14,6 +14,7 @@ export default {
       fontFamily:{
         Sue: ['Sue Ellen Francisco', 'cursive'],
         Poppins: ['Poppins', 'sans-serif'],
+        Italianno: ['Italianno', 'cursive'],
       }
     },
   },

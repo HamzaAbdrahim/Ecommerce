@@ -1,6 +1,8 @@
+import { useState } from "react"
 import assets from "../assets/imges"
 import {navlinks} from "../content/index"
 import styles from "../style"
+import Usercard from "./Usercard"
 
 const Mobilemenu = (prop) => {
   return (
@@ -24,7 +26,10 @@ const Mobilemenu = (prop) => {
                 </ul>
                 <div className={`${styles.flexCenter} gap-8 `}>
           <img src={assets.search} alt="search"className="h-8 cursor-pointer" />
+          <div>
           <img src={assets.user} alt="user" className="h-8 cursor-pointer" />
+          <Usercard />
+          </div>
           <img src={assets.bag} alt="cart" className="h-10 cursor-pointer" />
                 </div>
             </div>

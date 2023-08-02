@@ -10,7 +10,7 @@ const styles = {
 
 
     paddingx:"px-[3.13rem]  xl:px-[3.5rem]",
-    paddingY:"md:py-[7.94rem] py-[6.36rem]",
+    paddingY:"md:py-[2.231rem] py-[1.36rem]",
 
 
     flexCenter: "flex justify-center items-center",

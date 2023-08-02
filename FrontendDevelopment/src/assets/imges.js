@@ -6,6 +6,7 @@ import menu from "./menu.png"
 import close from "./close.png"
 import loginbg from "./loginbg.jpg"
 import closeerror from "./closeerror.png"
+import mainlanding from "./Hero.jpg"
 
 
 
@@ -17,7 +18,8 @@ const assets =  {
     menu,
     close,
     loginbg,
-    closeerror
+    closeerror,
+    mainlanding,
 
 }
 export default assets;
