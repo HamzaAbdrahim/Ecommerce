@@ -5,6 +5,8 @@ import search from "./search.png"
 import menu from "./menu.png"
 import close from "./close.png"
 import loginbg from "./loginbg.jpg"
+import closeerror from "./closeerror.png"
+
 
 
 const assets =  {
@@ -14,7 +16,8 @@ const assets =  {
     search,
     menu,
     close,
-    loginbg
+    loginbg,
+    closeerror
 
 }
 export default assets;
