@@ -6,7 +6,7 @@ import Usercard from "./Usercard"
 
 const Mobilemenu = (prop) => {
   return (
-            <div className={`fixed z-50 h-screen w-full ${prop.open? "!top-0":""} -top-[52rem] bg-white shadow-2xl py-24 px-10 duration-1000 ease-in-out xl:hidden `}>
+            <div className={`fixed z-[60] h-screen w-full ${prop.open? "!top-0":""} -top-[70rem] bg-white shadow-2xl py-24 px-10 duration-1000 ease-in-out xl:hidden `}>
                 <div className={`${styles.flexitems}`}>
                     <div className="inline-flex gap-4">
             <img src={assets.logo} alt="logo" />
