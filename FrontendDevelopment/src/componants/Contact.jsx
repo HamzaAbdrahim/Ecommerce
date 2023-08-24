@@ -6,10 +6,10 @@ import assets from '../assets/imges'
 
 const Contact = () => {
   return (
-    <div className={`${styles.paddingY} flex items-center flex-col  justify-center p-12`}>
-    <h1 className=" font-Sue text-primary text-center text-5xl mb-20 not-italic font-normal leading-[normal] capitalize">FAQ</h1>
-    <div className={`${layout.sectionrevers} gap-36 lg:gap-96`}>
-    <div className="mx-auto w-full max-w-[550px]">
+    <div className={`${styles.paddingY} flex items-center flex-col justify-center p-12`}>
+    <h1 className=" font-Sue text-primary text-center text-5xl mb-20 not-italic font-normal leading-[normal] capitalize">Contact Us</h1>
+    <div className={`flex flex-col-reverse xl:flex-row justify-center gap-36  xl:gap-96`}>
+    <div className={`${styles.flexCenter} text-center`}>
       <form action="" method="POST">
         <div className="mb-5">
             <p className='text-2xl mb-4'>Full Name</p>
@@ -31,12 +31,11 @@ const Contact = () => {
             name="message"
             id="message"
             placeholder="Type your message"
-            class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-2xl text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
-          ></textarea>
+            class="max-w-96 h-62 resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-10 text-2xl text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
+          >
+          </textarea>
         </div>
-        <div>
-            <Inbutton text = "Submit" />
-        </div>
+            <Inbutton text = "Submit" styles = "" />
       </form>
     </div>
     <img src={assets.contactimg} alt="contactimg" className='h-[35rem]' />

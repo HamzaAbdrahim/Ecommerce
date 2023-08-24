@@ -1,10 +1,11 @@
 import {ourproduct} from "../content/index"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import {Link} from "react-router-dom"
 const Products = () => {
+
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -24,7 +25,7 @@ const Products = () => {
   return (
     <>
     <div className="flex items-center font-Sue  justify-center ">
-    <h1 className=" text-primary text-5xl not-italic font-normal leading-[normal] capitalize">Free Special Recipes</h1>
+    <h1 className=" text-primary text-5xl text-center md:first-letter:text-left not-italic font-normal leading-[normal] capitalize">Free Special Recipes</h1>
     </div>
     <Carousel 
    infinite={true}
@@ -33,7 +34,10 @@ const Products = () => {
     responsive={responsive}
     removeArrowOnDeviceType={["tablet", "mobile","desktop"]}>
       {ourproduct.map((product, index) => (
-        <div key={index} class="mx-auto mt-11 w-96 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-2xl duration-300 hover:scale-105 hover:shadow-lg py-10 px-5">
+        <Link to = "/Soppingcart"  >
+        <div
+         key={index}
+        class="mx-auto p-10 transform  rounded-lg bg-white dark:bg-slate-800 shadow-2xl duration-300 hover:scale-105 hover:shadow-lg ">
           <img class="h-52 w-full object-cover rounded-lg object-center" src={product.img} alt="Product Image" />
           <div class="p-4">
             <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">{product.name}</h2>
@@ -50,6 +54,7 @@ const Products = () => {
               Add to cart</a>
           </div>
         </div>
+        </Link>
       ))}
     </Carousel>
     </>

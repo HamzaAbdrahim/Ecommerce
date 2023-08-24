@@ -7,6 +7,7 @@ import Products from "../componants/Products"
 import Contact from "../componants/Contact"
 import Fqo from "../componants/Fqo"
 import Footer from "../componants/Footer"
+import Soppingcart from "../componants/Soppingcart"
 const Routers = () => {
   return (
     <Routes>
@@ -21,6 +22,7 @@ const Routers = () => {
     <Footer />
     </div>} />
     <Route path="/login" element={<Login />} />
+    <Route path="/Soppingcart" element={<Soppingcart />} />
     </Routes>
   )
 }

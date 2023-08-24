@@ -29,7 +29,7 @@ const Navbar = () => {
   
   return (
     <>
-    <div className={`${styles.flexBetween} px-20 lg:px-[6-37rem] py-8 border-b-2 border-b-solid border-b-[#ccc] `}>
+    <div className={`${styles.flexBetween} px-10 lg:px-[6-37rem] py-8 border-b-2 border-b-solid border-b-[#ccc] `}>
       <Link to={"/"}>
         <div className={`${styles.flexitems} gap-4`}>
             <img src={assets.logo} alt="logo" />
